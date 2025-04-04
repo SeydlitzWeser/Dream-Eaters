@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <!--Boundless Lust-->
+    <GeneDef ParentName="LibidoBase">
+        <defName>HQC_BoundlessLust</defName>
+        <label>boundless lust</label>
+        <description>Carriers of this gene are incredibly lustful and will seek to have lovin' with their partners quite a lot.</description>
+        <displayOrderInCategory>666.2</displayOrderInCategory>
+        <iconPath>UI/Icons/Genes/HQC_BoundlessLust</iconPath>
+        <customEffectDescriptions>
+            <li>Increases the chance of lovin' dramatically.</li>
+        </customEffectDescriptions>
+        <lovinMTBFactor>0.75</lovinMTBFactor>
+        <biostatCpx>6</biostatCpx>
+        <biostatMet>-3</biostatMet>
+        <exclusionTags>
+            <li>libido</li>
+        </exclusionTags>
+    </GeneDef>
+    <!--Psychic Impregnation-->
+</Defs>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <GeneDef ParentName="GeneHairColorBase">
+        <defName>HQC_Hair_DarkPurple</defName>
+        <label>dark purple hair</label>
+        <hairColorOverride>(52, 21, 57)</hairColorOverride>
+        <selectionWeight>0</selectionWeight>
+        <displayOrderInCategory>666.1</displayOrderInCategory>
+    </GeneDef>
+    <GeneDef ParentName="GeneHairColorBase">
+        <defName>HQC_Hair_DarkTurquoise</defName>
+        <label>dark turquoise hair</label>
+        <hairColorOverride>(0, 58, 82)</hairColorOverride>
+        <selectionWeight>0</selectionWeight>
+        <displayOrderInCategory>666.2</displayOrderInCategory>
+    </GeneDef>
+    <GeneDef ParentName="GeneHairColorBase">
+        <defName>HQC_Hair_RubyRed</defName>
+        <label>ruby red hair</label>
+        <hairColorOverride>(155, 17, 30)</hairColorOverride>
+        <selectionWeight>0</selectionWeight>
+        <displayOrderInCategory>666.3</displayOrderInCategory>
+    </GeneDef>
+    <GeneDef ParentName="GeneSkinColorOverride">
+		<defName>HQC_Skin_RoyalPurple</defName>
+		<label>royal purple skin</label>
+		<labelShortAdj>purple</labelShortAdj>
+		<description>Carriers of this gene produce a pigment that gives their skin a regal purple color.</description>
+		<skinColorOverride>(108,59,170)</skinColorOverride>
+		<displayOrderInCategory>666.1</displayOrderInCategory>
+	</GeneDef>
+    <GeneDef ParentName="GeneSkinColorOverride">
+		<defName>HQC_Skin_Teal</defName>
+		<label>teal skin</label>
+		<labelShortAdj>teal</labelShortAdj>
+		<description>Carriers of this gene produce a pigment that gives their skin a teal color.</description>
+		<skinColorOverride>(6,148,148)</skinColorOverride>
+		<displayOrderInCategory>666.2</displayOrderInCategory>
+	</GeneDef>
+</Defs>

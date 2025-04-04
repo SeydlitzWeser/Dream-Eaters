@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<GeneDef>
+		<defName>HQC_TemperatureResistant</defName>
+		<label>temperature resistant</label>
+		<labelShortAdj>temperature resistant</labelShortAdj>
+		<description>Carriers of this gene are comfortable even in extreme temperatures. However, they are still vulnerable to fire and frostbite.</description>
+		<iconPath>UI/Icons/Genes/HQC_TempRes</iconPath>
+		<displayCategory>Archite</displayCategory>
+		<displayOrderInCategory>666</displayOrderInCategory>
+		<selectionWeight>0</selectionWeight>
+		<statOffsets>
+			<ComfyTemperatureMax>100</ComfyTemperatureMax>
+			<ComfyTemperatureMin>-100</ComfyTemperatureMin>
+		</statOffsets>
+		<biostatCpx>2</biostatCpx>
+		<biostatMet>-3</biostatMet>
+		<biostatArc>1</biostatArc>
+		<exclusionTags>
+			<li>MaxTemperature</li>
+			<li>MinTemperature</li>
+		</exclusionTags>
+	</GeneDef>
+</Defs>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<GeneDef>
+		<defName>HQC_NaturalFlirt</defName>
+		<label>natural flirt</label>
+		<description>Carriers of this gene love to flirt with their partners every chance they get. This pleases the person being flirted with and lifts up their mood.</description>
+		<iconPath>UI/Icons/Genes/HQC_NaturalFlirt</iconPath>
+		<displayCategory>Reproduction</displayCategory>
+		<displayOrderInCategory>666.3</displayOrderInCategory>
+		<selectionWeight>0</selectionWeight>
+		<forcedTraits>
+			<li>
+				<def>HQC_Flirtacious</def>
+			</li>
+		</forcedTraits>
+		<biostatMet>-1</biostatMet>
+		<biostatCpx>2</biostatCpx>
+		<exclusionTags>
+			<li>flirty</li>
+		</exclusionTags>
+	</GeneDef>
+	<GeneDef>
+		<defName>HQC_DreamyVoice</defName>
+		<label>dreamy voice</label>
+		<description>Carriers of this gene have a voice that draws others to them and make them easier to manipulate, be it good or bad.</description>
+		<iconPath>UI/Icons/Genes/HQC_DreamyVoice</iconPath>
+		<displayCategory>Cosmetic</displayCategory>
+		<displayOrderInCategory>666.4</displayOrderInCategory>
+		<selectionWeight>0</selectionWeight>
+		<forcedTraits>
+			<li>
+				<def>HQC_EnchantingVoice</def>
+			</li>
+		</forcedTraits>
+		<biostatMet>-3</biostatMet>
+		<biostatCpx>6</biostatCpx>
+	</GeneDef>
+</Defs>

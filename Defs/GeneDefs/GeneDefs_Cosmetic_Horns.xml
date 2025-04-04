@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+    <!--Dark Horns-->
+    <GeneDef ParentName="GeneHeadboneBase">
+        <defName>HQC_HornsDoubleCrownDark</defName>
+        <label>double crown horns (dark)</label>
+        <description>Carriers of this gene grow two sets of horns along the top of their head.</description>
+        <iconPath>UI/Icons/Genes/HQC_HornsDoubleCrownDark</iconPath>
+        <displayCategory>HQC_Horns</displayCategory>
+        <displayOrderInCategory>666.1</displayOrderInCategory>
+        <selectionWeight>0</selectionWeight>
+        <renderNodeProperties>
+            <li>
+                <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+                <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+                <parentTagDef>Head</parentTagDef>
+                <color>(78, 78, 78)</color>
+                <useRottenColor>false</useRottenColor>
+                <rotDrawMode>Fresh, Rotting</rotDrawMode>
+                <useSkinShader>false</useSkinShader>
+                <texPath>Things/Pawn/Humanlike/HeadAttachments/HQC_Horns/HQC_HornsDoubleCrown</texPath>
+                <narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
+                <drawData>
+                    <defaultData>
+                        <layer>80</layer>
+                    </defaultData>
+                    <dataNorth>
+                        <layer>10</layer>
+                    </dataNorth>
+                </drawData>
+            </li>
+        </renderNodeProperties>
+    </GeneDef>
+    <GeneDef ParentName="GeneHeadboneBase">
+        <defName>HQC_HornsDownturnedDark</defName>
+        <label>downturned horns (dark)</label>
+        <description>Carriers of this gene grow a pair of curved, downturned horns.</description>
+        <iconPath>UI/Icons/Genes/HQC_HornsDownturnedDark</iconPath>
+        <displayCategory>HQC_Horns</displayCategory>
+        <displayOrderInCategory>666.1</displayOrderInCategory>
+        <selectionWeight>0</selectionWeight>
+        <renderNodeProperties>
+            <li>
+                <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+                <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+                <parentTagDef>Head</parentTagDef>
+                <color>(78, 78, 78)</color>
+                <useRottenColor>false</useRottenColor>
+                <rotDrawMode>Fresh, Rotting</rotDrawMode>
+                <useSkinShader>false</useSkinShader>
+                <texPath>Things/Pawn/Humanlike/HeadAttachments/HQC_Horns/HQC_HornsDownturned</texPath>
+                <narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
+                <drawData>
+                    <defaultData>
+                        <layer>80</layer>
+                    </defaultData>
+                    <dataNorth>
+                        <layer>10</layer>
+                    </dataNorth>
+                </drawData>
+            </li>
+        </renderNodeProperties>
+    </GeneDef>
+    <GeneDef ParentName="GeneHeadboneBase">
+        <defName>HQC_HornsPointyNubsDark</defName>
+        <label>pointy nub horns (dark)</label>
+        <description>Carriers of this gene grow a pair of small, pointy horns.</description>
+        <iconPath>UI/Icons/Genes/HQC_HornsPointyNubsDark</iconPath>
+        <displayCategory>HQC_Horns</displayCategory>
+        <displayOrderInCategory>666.1</displayOrderInCategory>
+        <selectionWeight>0</selectionWeight>
+        <renderNodeProperties>
+            <li>
+                <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+                <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+                <parentTagDef>Head</parentTagDef>
+                <color>(78, 78, 78)</color>
+                <useRottenColor>false</useRottenColor>
+                <rotDrawMode>Fresh, Rotting</rotDrawMode>
+                <useSkinShader>false</useSkinShader>
+                <texPath>Things/Pawn/Humanlike/HeadAttachments/HQC_Horns/HQC_HornsPointyNubs</texPath>
+                <narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
+                <drawData>
+                    <defaultData>
+                        <layer>80</layer>
+                    </defaultData>
+                    <dataNorth>
+                        <layer>10</layer>
+                    </dataNorth>
+                </drawData>
+            </li>
+        </renderNodeProperties>
+    </GeneDef>
+    <GeneDef ParentName="GeneHeadboneBase">
+        <defName>HQC_HornsTwirlyDark</defName>
+        <label>twirly horns (dark)</label>
+        <description>Carriers of this gene grow a pair of twirly horns, growing horizontally from their headbone.</description>
+        <iconPath>UI/Icons/Genes/HQC_HornsTwirlyDark</iconPath>
+        <displayCategory>HQC_Horns</displayCategory>
+        <displayOrderInCategory>666.1</displayOrderInCategory>
+        <selectionWeight>0</selectionWeight>
+        <renderNodeProperties>
+            <li>
+                <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+                <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+                <parentTagDef>Head</parentTagDef>
+                <color>(78, 78, 78)</color>
+                <useRottenColor>false</useRottenColor>
+                <rotDrawMode>Fresh, Rotting</rotDrawMode>
+                <useSkinShader>false</useSkinShader>
+                <texPath>Things/Pawn/Humanlike/HeadAttachments/HQC_Horns/HQC_HornsTwirly</texPath>
+                <narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
+                <drawData>
+                    <defaultData>
+                        <layer>80</layer>
+                    </defaultData>
+                    <dataNorth>
+                        <layer>10</layer>
+                    </dataNorth>
+                </drawData>
+            </li>
+        </renderNodeProperties>
+    </GeneDef>
+    <GeneDef ParentName="GeneHeadboneBase">
+        <defName>HQC_HornsUprightDark</defName>
+        <label>upright horns (dark)</label>
+        <description>Carriers of this gene grow a pair furled, vertical horns.</description>
+        <iconPath>UI/Icons/Genes/HQC_HornsUprightDark</iconPath>
+        <displayCategory>HQC_Horns</displayCategory>
+        <displayOrderInCategory>666.1</displayOrderInCategory>
+        <selectionWeight>0</selectionWeight>
+        <renderNodeProperties>
+            <li>
+                <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+                <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+                <parentTagDef>Head</parentTagDef>
+                <color>(78, 78, 78)</color>
+                <useRottenColor>false</useRottenColor>
+                <rotDrawMode>Fresh, Rotting</rotDrawMode>
+                <useSkinShader>false</useSkinShader>
+                <texPath>Things/Pawn/Humanlike/HeadAttachments/HQC_Horns/HQC_HornsUpright</texPath>
+                <narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
+                <drawData>
+                    <defaultData>
+                        <layer>80</layer>
+                    </defaultData>
+                    <dataNorth>
+                        <layer>10</layer>
+                    </dataNorth>
+                </drawData>
+            </li>
+        </renderNodeProperties>
+    </GeneDef>
+    <GeneDef ParentName="GeneHeadboneBase">
+        <defName>HQC_HornsRandomDark</defName>
+        <label>random horns (dark)</label>
+        <description>Carriers of this gene grow a pair of horns emerging from their headbone.</description>
+        <iconPath>UI/Icons/Genes/HQC_HornsRandomDark</iconPath>
+        <displayCategory>HQC_Horns</displayCategory>
+        <displayOrderInCategory>666.2</displayOrderInCategory>
+        <selectionWeight>0</selectionWeight>
+        <renderNodeProperties>
+            <li>
+                <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+                <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+                <parentTagDef>Head</parentTagDef>
+                <color>(78, 78, 78)</color>
+                <useRottenColor>false</useRottenColor>
+                <rotDrawMode>Fresh, Rotting</rotDrawMode>
+                <useSkinShader>false</useSkinShader>
+                <texPaths>
+                    <li>Things/Pawn/Humanlike/HeadAttachments/HQC_Horns/HQC_HornsDoubleCrown</li>
+                    <li>Things/Pawn/Humanlike/HeadAttachments/HQC_Horns/HQC_HornsDownturned</li>
+                    <li>Things/Pawn/Humanlike/HeadAttachments/HQC_Horns/HQC_HornsPointyNubs</li>
+                    <li>Things/Pawn/Humanlike/HeadAttachments/HQC_Horns/HQC_HornsTwirly</li>
+                    <li>Things/Pawn/Humanlike/HeadAttachments/HQC_Horns/HQC_HornsUpright</li>
+                </texPaths>
+                <narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
+                <drawData>
+                    <defaultData>
+                        <layer>80</layer>
+                    </defaultData>
+                    <dataNorth>
+                        <layer>10</layer>
+                    </dataNorth>
+                </drawData>
+            </li>
+        </renderNodeProperties>
+    </GeneDef>
+    <!--Keratin Horns-->
+    <GeneDef ParentName="GeneHeadboneBase">
+        <defName>HQC_HornsDoubleCrownKeratin</defName>
+        <label>double crown horns (keratin)</label>
+        <description>Carriers of this gene grow two sets of horns along the top of their head.</description>
+        <iconPath>UI/Icons/Genes/HQC_HornsDoubleCrownKeratin</iconPath>
+        <displayCategory>HQC_Horns</displayCategory>
+        <displayOrderInCategory>666.3</displayOrderInCategory>
+        <selectionWeight>0</selectionWeight>
+        <renderNodeProperties>
+            <li>
+                <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+                <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+                <parentTagDef>Head</parentTagDef>
+                <color>(239, 235, 227)</color>
+                <useRottenColor>false</useRottenColor>
+                <rotDrawMode>Fresh, Rotting</rotDrawMode>
+                <useSkinShader>false</useSkinShader>
+                <texPath>Things/Pawn/Humanlike/HeadAttachments/HQC_Horns/HQC_HornsDoubleCrown</texPath>
+                <narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
+                <drawData>
+                    <defaultData>
+                        <layer>80</layer>
+                    </defaultData>
+                    <dataNorth>
+                        <layer>10</layer>
+                    </dataNorth>
+                </drawData>
+            </li>
+        </renderNodeProperties>
+    </GeneDef>
+    <GeneDef ParentName="GeneHeadboneBase">
+        <defName>HQC_HornsDownturnedKeratin</defName>
+        <label>downturned horns (keratin)</label>
+        <description>Carriers of this gene grow a pair of curved, downturned horns.</description>
+        <iconPath>UI/Icons/Genes/HQC_HornsDownturnedKeratin</iconPath>
+        <displayCategory>HQC_Horns</displayCategory>
+        <displayOrderInCategory>666.3</displayOrderInCategory>
+        <selectionWeight>0</selectionWeight>
+        <renderNodeProperties>
+            <li>
+                <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+                <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+                <parentTagDef>Head</parentTagDef>
+                <color>(239, 235, 227)</color>
+                <useRottenColor>false</useRottenColor>
+                <rotDrawMode>Fresh, Rotting</rotDrawMode>
+                <useSkinShader>false</useSkinShader>
+                <texPath>Things/Pawn/Humanlike/HeadAttachments/HQC_Horns/HQC_HornsDownturned</texPath>
+                <narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
+                <drawData>
+                    <defaultData>
+                        <layer>80</layer>
+                    </defaultData>
+                    <dataNorth>
+                        <layer>10</layer>
+                    </dataNorth>
+                </drawData>
+            </li>
+        </renderNodeProperties>
+    </GeneDef>
+    <GeneDef ParentName="GeneHeadboneBase">
+        <defName>HQC_HornsPointyNubsKeratin</defName>
+        <label>pointy nub horns (keratin)</label>
+        <description>Carriers of this gene grow a pair of small, pointy horns.</description>
+        <iconPath>UI/Icons/Genes/HQC_HornsPointyNubsKeratin</iconPath>
+        <displayCategory>HQC_Horns</displayCategory>
+        <displayOrderInCategory>666.3</displayOrderInCategory>
+        <selectionWeight>0</selectionWeight>
+        <renderNodeProperties>
+            <li>
+                <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+                <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+                <parentTagDef>Head</parentTagDef>
+                <color>(239, 235, 227)</color>
+                <useRottenColor>false</useRottenColor>
+                <rotDrawMode>Fresh, Rotting</rotDrawMode>
+                <useSkinShader>false</useSkinShader>
+                <texPath>Things/Pawn/Humanlike/HeadAttachments/HQC_Horns/HQC_HornsPointyNubs</texPath>
+                <narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
+                <drawData>
+                    <defaultData>
+                        <layer>80</layer>
+                    </defaultData>
+                    <dataNorth>
+                        <layer>10</layer>
+                    </dataNorth>
+                </drawData>
+            </li>
+        </renderNodeProperties>
+    </GeneDef>
+    <GeneDef ParentName="GeneHeadboneBase">
+        <defName>HQC_HornsTwirlyKeratin</defName>
+        <label>twirly horns (keratin)</label>
+        <description>Carriers of this gene grow a pair of twirly horns, growing horizontally from their headbone.</description>
+        <iconPath>UI/Icons/Genes/HQC_HornsTwirlyKeratin</iconPath>
+        <displayCategory>HQC_Horns</displayCategory>
+        <displayOrderInCategory>666.3</displayOrderInCategory>
+        <selectionWeight>0</selectionWeight>
+        <renderNodeProperties>
+            <li>
+                <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+                <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+                <parentTagDef>Head</parentTagDef>
+                <color>(239, 235, 227)</color>
+                <useRottenColor>false</useRottenColor>
+                <rotDrawMode>Fresh, Rotting</rotDrawMode>
+                <useSkinShader>false</useSkinShader>
+                <texPath>Things/Pawn/Humanlike/HeadAttachments/HQC_Horns/HQC_TwirlyHorns</texPath>
+                <narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
+                <drawData>
+                    <defaultData>
+                        <layer>80</layer>
+                    </defaultData>
+                    <dataNorth>
+                        <layer>10</layer>
+                    </dataNorth>
+                </drawData>
+            </li>
+        </renderNodeProperties>
+    </GeneDef>
+    <GeneDef ParentName="GeneHeadboneBase">
+        <defName>HQC_HornsUprightKeratin</defName>
+        <label>upright horns (keratin)</label>
+        <description>Carriers of this gene grow a pair furled, vertical horns.</description>
+        <iconPath>UI/Icons/Genes/HQC_HornsUprightKeratin</iconPath>
+        <displayCategory>HQC_Horns</displayCategory>
+        <displayOrderInCategory>666.3</displayOrderInCategory>
+        <selectionWeight>0</selectionWeight>
+        <renderNodeProperties>
+            <li>
+                <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+                <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+                <parentTagDef>Head</parentTagDef>
+                <color>(239, 235, 227)</color>
+                <useRottenColor>false</useRottenColor>
+                <rotDrawMode>Fresh, Rotting</rotDrawMode>
+                <useSkinShader>false</useSkinShader>
+                <texPath>Things/Pawn/Humanlike/HeadAttachments/HQC_Horns/HQC_HornsUpright</texPath>
+                <narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
+                <drawData>
+                    <defaultData>
+                        <layer>80</layer>
+                    </defaultData>
+                    <dataNorth>
+                        <layer>10</layer>
+                    </dataNorth>
+                </drawData>
+            </li>
+        </renderNodeProperties>
+    </GeneDef>
+    <GeneDef ParentName="GeneHeadboneBase">
+        <defName>HQC_HornsRandomKeratin</defName>
+        <label>random horns (keratin)</label>
+        <description>Carriers of this gene grow a pair of horns emerging from their headbone.</description>
+        <iconPath>UI/Icons/Genes/HQC_HornsRandomKeratin</iconPath>
+        <displayCategory>HQC_Horns</displayCategory>
+        <displayOrderInCategory>666.4</displayOrderInCategory>
+        <selectionWeight>0</selectionWeight>
+        <renderNodeProperties>
+            <li>
+                <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+                <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+                <parentTagDef>Head</parentTagDef>
+                <color>(239, 235, 227)</color>
+                <useRottenColor>false</useRottenColor>
+                <rotDrawMode>Fresh, Rotting</rotDrawMode>
+                <useSkinShader>false</useSkinShader>
+                <texPaths>
+                    <li>Things/Pawn/Humanlike/HeadAttachments/HQC_Horns/HQC_HornsDoubleCrown</li>
+                    <li>Things/Pawn/Humanlike/HeadAttachments/HQC_Horns/HQC_HornsDownturned</li>
+                    <li>Things/Pawn/Humanlike/HeadAttachments/HQC_Horns/HQC_HornsPointyNubs</li>
+                    <li>Things/Pawn/Humanlike/HeadAttachments/HQC_Horns/HQC_HornsTwirly</li>
+                    <li>Things/Pawn/Humanlike/HeadAttachments/HQC_Horns/HQC_HornsUpright</li>
+                </texPaths>
+                <narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
+                <drawData>
+                    <defaultData>
+                        <layer>80</layer>
+                    </defaultData>
+                    <dataNorth>
+                        <layer>10</layer>
+                    </dataNorth>
+                </drawData>
+            </li>
+        </renderNodeProperties>
+    </GeneDef>
+    <!--Skin Colored Horns-->
+    <GeneDef ParentName="GeneHeadboneBase">
+        <defName>HQC_HornsDoubleCrown</defName>
+        <label>double crown horns</label>
+        <description>Carriers of this gene grow two sets of horns along the top of their head.</description>
+        <iconPath>UI/Icons/Genes/HQC_HornsDoubleCrown</iconPath>
+        <displayCategory>HQC_Horns</displayCategory>
+        <displayOrderInCategory>666.5</displayOrderInCategory>
+        <selectionWeight>0</selectionWeight>
+        <renderNodeProperties>
+            <li>
+                <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+                <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+                <parentTagDef>Head</parentTagDef>
+                <colorType>Skin</colorType>
+                <useRottenColor>true</useRottenColor>
+                <rotDrawMode>Fresh, Rotting</rotDrawMode>
+                <useSkinShader>false</useSkinShader>
+                <texPath>Things/Pawn/Humanlike/HeadAttachments/HQC_Horns/HQC_HornsDoubleCrown</texPath>
+                <narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
+                <drawData>
+                    <defaultData>
+                        <layer>80</layer>
+                    </defaultData>
+                    <dataNorth>
+                        <layer>10</layer>
+                    </dataNorth>
+                </drawData>
+            </li>
+        </renderNodeProperties>
+    </GeneDef>
+    <GeneDef ParentName="GeneHeadboneBase">
+        <defName>HQC_HornsDownturned</defName>
+        <label>downturned horns</label>
+        <description>Carriers of this gene grow a pair of curved, downturned horns.</description>
+        <iconPath>UI/Icons/Genes/HQC_HornsDownturned</iconPath>
+        <displayCategory>HQC_Horns</displayCategory>
+        <displayOrderInCategory>666.5</displayOrderInCategory>
+        <selectionWeight>0</selectionWeight>
+        <renderNodeProperties>
+            <li>
+                <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+                <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+                <parentTagDef>Head</parentTagDef>
+                <colorType>Skin</colorType>
+                <useRottenColor>true</useRottenColor>
+                <rotDrawMode>Fresh, Rotting</rotDrawMode>
+                <useSkinShader>false</useSkinShader>
+                <texPath>Things/Pawn/Humanlike/HeadAttachments/HQC_Horns/HQC_HornsDownturned</texPath>
+                <narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
+                <drawData>
+                    <defaultData>
+                        <layer>80</layer>
+                    </defaultData>
+                    <dataNorth>
+                        <layer>10</layer>
+                    </dataNorth>
+                </drawData>
+            </li>
+        </renderNodeProperties>
+    </GeneDef>
+    <GeneDef ParentName="GeneHeadboneBase">
+        <defName>HQC_HornsPointyNubs</defName>
+        <label>pointy nub horns</label>
+        <description>Carriers of this gene grow a pair of small, pointy horns.</description>
+        <iconPath>UI/Icons/Genes/HQC_HornsPointyNubs</iconPath>
+        <displayCategory>HQC_Horns</displayCategory>
+        <displayOrderInCategory>666.5</displayOrderInCategory>
+        <selectionWeight>0</selectionWeight>
+        <renderNodeProperties>
+            <li>
+                <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+                <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+                <parentTagDef>Head</parentTagDef>
+                <colorType>Skin</colorType>
+                <useRottenColor>true</useRottenColor>
+                <rotDrawMode>Fresh, Rotting</rotDrawMode>
+                <useSkinShader>false</useSkinShader>
+                <texPath>Things/Pawn/Humanlike/HeadAttachments/HQC_Horns/HQC_HornsPointyNubs</texPath>
+                <narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
+                <drawData>
+                    <defaultData>
+                        <layer>80</layer>
+                    </defaultData>
+                    <dataNorth>
+                        <layer>10</layer>
+                    </dataNorth>
+                </drawData>
+            </li>
+        </renderNodeProperties>
+    </GeneDef>
+    <GeneDef ParentName="GeneHeadboneBase">
+        <defName>HQC_HornsTwirly</defName>
+        <label>twirly horns</label>
+        <description>Carriers of this gene grow a pair of twirly horns, growing horizontally from their headbone.</description>
+        <iconPath>UI/Icons/Genes/HQC_HornsTwirly</iconPath>
+        <displayCategory>HQC_Horns</displayCategory>
+        <displayOrderInCategory>666.5</displayOrderInCategory>
+        <selectionWeight>0</selectionWeight>
+        <renderNodeProperties>
+            <li>
+                <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+                <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+                <parentTagDef>Head</parentTagDef>
+                <colorType>Skin</colorType>
+                <useRottenColor>true</useRottenColor>
+                <rotDrawMode>Fresh, Rotting</rotDrawMode>
+                <useSkinShader>false</useSkinShader>
+                <texPath>Things/Pawn/Humanlike/HeadAttachments/HQC_Horns/HQC_HornsTwirly</texPath>
+                <narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
+                <drawData>
+                    <defaultData>
+                        <layer>80</layer>
+                    </defaultData>
+                    <dataNorth>
+                        <layer>10</layer>
+                    </dataNorth>
+                </drawData>
+            </li>
+        </renderNodeProperties>
+    </GeneDef>
+    <GeneDef ParentName="GeneHeadboneBase">
+        <defName>HQC_HornsUpright</defName>
+        <label>upright horns</label>
+        <description>Carriers of this gene grow a pair furled, vertical horns.</description>
+        <iconPath>UI/Icons/Genes/HQC_HornsUpright</iconPath>
+        <displayCategory>HQC_Horns</displayCategory>
+        <displayOrderInCategory>666.5</displayOrderInCategory>
+        <selectionWeight>0</selectionWeight>
+        <renderNodeProperties>
+            <li>
+                <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+                <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+                <parentTagDef>Head</parentTagDef>
+                <colorType>Skin</colorType>
+                <useRottenColor>true</useRottenColor>
+                <rotDrawMode>Fresh, Rotting</rotDrawMode>
+                <useSkinShader>false</useSkinShader>
+                <texPath>Things/Pawn/Humanlike/HeadAttachments/HQC_Horns/HQC_HornsUpright</texPath>
+                <narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
+                <drawData>
+                    <defaultData>
+                        <layer>80</layer>
+                    </defaultData>
+                    <dataNorth>
+                        <layer>10</layer>
+                    </dataNorth>
+                </drawData>
+            </li>
+        </renderNodeProperties>
+    </GeneDef>
+    <GeneDef ParentName="GeneHeadboneBase">
+        <defName>HQC_HornsRandom</defName>
+        <label>random horns (skin color)</label>
+        <description>Carriers of this gene grow a pair of horns emerging from their headbone.</description>
+        <iconPath>UI/Icons/Genes/HQC_HornsRandom</iconPath>
+        <displayCategory>HQC_Horns</displayCategory>
+        <displayOrderInCategory>666.6</displayOrderInCategory>
+        <selectionWeight>0</selectionWeight>
+        <renderNodeProperties>
+            <li>
+                <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+                <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+                <parentTagDef>Head</parentTagDef>
+                <colorType>Skin</colorType>
+                <useRottenColor>true</useRottenColor>
+                <rotDrawMode>Fresh, Rotting</rotDrawMode>
+                <useSkinShader>false</useSkinShader>
+                <texPaths>
+                    <li>Things/Pawn/Humanlike/HeadAttachments/HQC_Horns/HQC_HornsDoubleCrown</li>
+                    <li>Things/Pawn/Humanlike/HeadAttachments/HQC_Horns/HQC_HornsDownturned</li>
+                    <li>Things/Pawn/Humanlike/HeadAttachments/HQC_Horns/HQC_HornsPointyNubs</li>
+                    <li>Things/Pawn/Humanlike/HeadAttachments/HQC_Horns/HQC_HornsTwirly</li>
+                    <li>Things/Pawn/Humanlike/HeadAttachments/HQC_Horns/HQC_HornsUpright</li>
+                </texPaths>
+                <narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
+                <drawData>
+                    <defaultData>
+                        <layer>80</layer>
+                    </defaultData>
+                    <dataNorth>
+                        <layer>10</layer>
+                    </dataNorth>
+                </drawData>
+            </li>
+        </renderNodeProperties>
+    </GeneDef>
+</Defs>

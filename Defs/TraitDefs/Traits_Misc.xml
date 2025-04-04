@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<TraitDef>
+		<defName>HQC_Flirtacious</defName>
+		<commonality>0.1</commonality>
+		<degreeDatas>
+			<li>
+				<label>flirtacious</label>
+				<description>{PAWN_nameDef} is a natural when it comes to flirting with others. {PAWN_pronoun} can easily make their partners swoon over them and make them feel loved and cared for.</description>
+			</li>
+		</degreeDatas>
+		<conflictingTraits>
+			<li>Abrasive</li>
+			<li>Psychopath</li>
+		</conflictingTraits>
+	</TraitDef>
+	<TraitDef>
+		<defName>HQC_EnchantingVoice</defName>
+		<commonality>0.5</commonality>
+		<degreeDatas>
+			<li>
+				<label>enchanting voice</label>
+				<description>{PAWN_nameDef} has a voice with the power to enchant others. People listen to {PAWN_pronoun} attentively and heed to their every words. This makes it easier for {PAWN_objective} to convert others to her ideoligion or persuade prisoners to join.</description>
+				<statOffsets>
+					<SocialImpact>0.25</SocialImpact>
+					<NegotiationAbility>0.25</NegotiationAbility>
+					<TradePriceImprovement>0.25</TradePriceImprovement>
+					<ConversionPower>0.25</ConversionPower>
+				</statOffsets>
+			</li>
+		</degreeDatas>
+		<exclusionTags>
+			<li>socialimpact</li>
+			<li>negotiationability</li>
+			<li>tradepriceimprovement</li>
+			<li>conversionpower</li>
+		</exclusionTags>
+	</TraitDef>
+	<Defs>
+</Defs>
+</Defs>

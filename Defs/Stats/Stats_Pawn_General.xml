@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<StatDef>
+		<defName>DreamEssenceGainFactor</defName>
+		<label>dream essence gain multiplier</label>
+		<description>A multiplier on the amount of dream essence gained.</description>
+		<category>BasicsPawn</category>
+		<toStringStyle>PercentZero</toStringStyle>
+		<defaultBaseValue>1</defaultBaseValue>
+		<hideAtValue>1</hideAtValue>
+	</StatDef>
+</Defs>

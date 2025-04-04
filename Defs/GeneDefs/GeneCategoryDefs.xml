@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <GeneCategoryDef>
+        <defName>HQC_Oneirogenic</defName>
+        <label>DE - Oneirogenic</label>
+        <displayPriorityInXenotype>509</displayPriorityInXenotype>
+    </GeneCategoryDef>
+    <GeneCategoryDef>
+        <defName>HQC_Horns</defName>
+        <label>DE - Horns</label>
+        <displayPriorityInXenotype>295.68</displayPriorityInXenotype>
+    </GeneCategoryDef>
+</Defs>

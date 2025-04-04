@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <!--Ears-->
+    <GeneDef ParentName="GeneEarsBase">
+        <defName>HQC_PointedEars</defName>
+        <label>pointed ears</label>
+        <description>Carriers of this gene have pointed ears.</description>
+        <iconPath>UI/Icons/Genes/HQC_PointedEars</iconPath>
+        <displayCategory>Cosmetic</displayCategory>
+        <displayOrderInCategory>666.1</displayOrderInCategory>
+        <selectionWeight>0</selectionWeight>
+        <renderNodeProperties>
+            <li>
+                <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+                <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+                <parentTagDef>Head</parentTagDef>
+                <colorType>Skin</colorType>
+                <useSkinShader>true</useSkinShader>
+                <useRottenColor>true</useRottenColor>
+                <rotDrawMode>Fresh, Rotting</rotDrawMode>
+                <texPath>Things/Pawn/Humanlike/HeadAttachments/HQC_Ears/HQC_PointedEars</texPath>
+                <drawData>
+                    <defaultData>
+                        <layer>70</layer>
+                    </defaultData>
+                </drawData>
+            </li>
+        </renderNodeProperties>
+    </GeneDef>
+    <!--Wings-->
+    <GeneDef>
+        <defName>HQC_GreatWings</defName>
+        <label>great wings</label>
+        <description>Carriers of this gene grow a pair of mighty wings, allowing them to fly.</description>
+        <iconPath>UI/Icons/Genes/HQC_GreatWings</iconPath>
+        <displayCategory>Cosmetic</displayCategory>
+        <displayOrderInCategory>666.2</displayOrderInCategory>
+        <selectionWeight>0</selectionWeight>
+        <customEffectDescriptions>
+            <li>Take flight over a large distance.</li>
+        </customEffectDescriptions>
+        <renderNodeProperties>
+            <li>
+                <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+                <parentTagDef>Body</parentTagDef>
+                <colorType>Skin</colorType>
+                <overrideMeshSize>(1.6, 1.6)</overrideMeshSize>
+                <useRottenColor>true</useRottenColor>
+                <rotDrawMode>Fresh, Rotting</rotDrawMode>
+                <texPath>Things/Pawn/Humanlike/BodyAttachments/HQC_Wings/HQC_GreatWings</texPath>
+                <drawData>
+                    <scaleOffsetByBodySize>true</scaleOffsetByBodySize>
+                    <defaultData>
+                        <layer>-2</layer>
+                    </defaultData>
+                    <dataNorth>
+                        <offset>(0, 0, 0)</offset>
+                        <layer>90</layer>
+                    </dataNorth>
+                </drawData>
+            </li>
+        </renderNodeProperties>
+        <abilities>
+            <li>HQC_Flight</li>
+        </abilities>
+        <biostatCpx>2</biostatCpx>
+        <biostatMet>-2</biostatMet>
+    </GeneDef>
+    <!--Tail-->
+    <GeneDef>
+		<defName>HQC_PointedTail</defName>
+		<label>pointed tail</label>
+		<description>Carriers of this gene grow a long tail tipped with a spade.</description>
+		<iconPath>UI/Icons/Genes/HQC_PointedTail</iconPath>
+		<displayCategory>Cosmetic</displayCategory>
+		<displayOrderInCategory>666.3</displayOrderInCategory>
+        <selectionWeight>0</selectionWeight>
+        <capMods>
+            <li>
+                <capacity>Manipulation</capacity>
+                <offset>0.05</offset>
+            </li>
+        </capMods>
+		<renderNodeProperties>
+			<li>
+				<workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+				<parentTagDef>Body</parentTagDef>
+				<colorType>Skin</colorType>
+				<overrideMeshSize>(1.6, 1.6)</overrideMeshSize>
+				<useRottenColor>true</useRottenColor>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<texPath>Things/Pawn/Humanlike/BodyAttachments/HQC_Tails/HQC_PointedTail</texPath>
+				<drawData>
+					<scaleOffsetByBodySize>true</scaleOffsetByBodySize>
+					<defaultData>
+						<layer>-2</layer>
+					</defaultData>
+				<dataNorth>
+					<offset>(0, 0, -0.05)</offset>
+					<layer>90</layer>
+				</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+        <biostatCpx>2</biostatCpx>
+        <biostatMet>-1</biostatMet>
+	</GeneDef>
+</Defs>
