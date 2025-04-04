@@ -6,18 +6,14 @@ using Verse.Sound;
 
 namespace DreamEaters
 {
-    public class GeneGizmo_ResourceDreamEssence : GeneGizmo_Resource
+    [StaticConstructorOnStartup]
+    public class GeneGizmo_ResourceDreamEssence(Gene_Resource gene, List<IGeneResourceDrain> drainGenes, Color barColor, Color barHighlightColor) : GeneGizmo_Resource(gene, drainGenes, barColor, barHighlightColor)
     {
         private static readonly Texture2D DreamEssenceCostTex = SolidColorMaterials.NewSolidColorTexture(new Color(0.78f, 0.72f, 0.66f));
 
         private const float TotalPulsateTime = 0.85f;
 
-        private List<Pair<IGeneResourceDrain, float>> tmpDrainGenes = new List<Pair<IGeneResourceDrain, float>>();
-
-        public GeneGizmo_ResourceDreamEssence(Gene_Resource gene, List<IGeneResourceDrain> drainGenes, Color barColor, Color barHighlightColor)
-            : base(gene, drainGenes, barColor, barHighlightColor)
-        {
-        }
+        private List<Pair<IGeneResourceDrain, float>> tmpDrainGenes = [];
 
         public override GizmoResult GizmoOnGUI(Vector2 topLeft, float maxWidth, GizmoRenderParms parms)
         {
@@ -36,13 +32,13 @@ namespace DreamEaters
             {
                 foreach (CompAbilityEffect effectComp in command_Ability.Ability.EffectComps)
                 {
-                    if (effectComp is CompAbilityEffect_DreamEssenceCost compAbilityEffect_DreamEssenceCost && compAbilityEffect_DreamEssenceCost.Props.dreamessenceCost > float.Epsilon)
+                    if (effectComp is CompAbilityEffect_DreamEssenceCost compAbilityEffect_DreamEssenceCost && compAbilityEffect_DreamEssenceCost.Props.dreamEssenceCost > float.Epsilon)
                     {
                         Rect rect = barRect.ContractedBy(3f);
                         float width = rect.width;
                         float num3 = gene.Value / gene.Max;
                         rect.xMax = rect.xMin + width * num3;
-                        float num4 = Mathf.Min(compAbilityEffect_DreamEssenceCost.Props.dreamessenceCost / gene.Max, 1f);
+                        float num4 = Mathf.Min(compAbilityEffect_DreamEssenceCost.Props.dreamEssenceCost / gene.Max, 1f);
                         rect.xMin = Mathf.Max(rect.xMin, rect.xMax - width * num4);
                         GUI.color = new Color(1f, 1f, 1f, num2 * 0.7f);
                         GenUI.DrawTextureWithMaterial(rect, DreamEssenceCostTex, null);
@@ -56,11 +52,10 @@ namespace DreamEaters
 
         protected override void DrawHeader(Rect headerRect, ref bool mouseOverElement)
         {
-            Gene_DreamEssence dreamessenceGene;
-            if (IsDraggable && (dreamessenceGene = gene as Gene_DreamEssence) != null)
+            if (IsDraggable && gene is Gene_DreamEssence dreamessenceGene)
             {
                 headerRect.xMax -= 24f;
-                Rect rect = new Rect(headerRect.xMax, headerRect.y, 24f, 24f);
+                Rect rect = new(headerRect.xMax, headerRect.y, 24f, 24f);
                 Widgets.DefIcon(rect, DE_DefOf.HQC_DreamCandy, null, 1f, null, drawPlaceholder: false, null, null, null);
                 GUI.DrawTexture(new Rect(rect.center.x, rect.y, rect.width / 2f, rect.height / 2f), dreamessenceGene.dreamCandiesAllowed ? Widgets.CheckboxOnTex : Widgets.CheckboxOffTex);
                 if (Widgets.ButtonInvisible(rect))

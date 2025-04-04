@@ -34,7 +34,7 @@
 		<label>dream essence loss</label>
 		<labelShortAdj>draining</labelShortAdj>
 		<description>Carriers of this gene lose an additional 8 dream essence per day from biological entropy.</description>
-		<iconPath>UI/Icons/Genes/Gene_DreamEssenceLoss</iconPath>
+		<iconPath>UI/Icons/Genes/HQC_DreamEssenceLoss</iconPath>
 		<displayCategory>HQC_Oneirogenic</displayCategory>
 		<displayOrderInCategory>666.2</displayOrderInCategory>
 		<resourceLabel>dream essence</resourceLabel>

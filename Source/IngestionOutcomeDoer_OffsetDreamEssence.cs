@@ -1,4 +1,4 @@
-﻿using System.Collection.General;
+﻿using System.Collections.Generic;
 using RimWorld;
 using UnityEngine;
 using Verse;
@@ -11,7 +11,7 @@ namespace DreamEaters
 
         protected override void DoIngestionOutcomeSpecial(Pawn pawn, Thing ingested, int ingestedCount)
         {
-            GeneUtility.OffsetDreamEssence(pawn, offset * (float)ingestedCount);
+            DreamGeneUtility.OffsetDreamEsssence(pawn, offset * (float)ingestedCount);
         }
 
         public override IEnumerable<StatDrawEntry> SpecialDisplayStats(ThingDef parentDef)
