@@ -11,8 +11,8 @@ namespace DreamEaters
         {
             get
             {
-                Gene_DreamEssence gene_DreamEssence = parent.pawn.genes?.GetFirstGeneOfType<Gene_DreanEssence>();
-                if (gene_DreamEssence == null || gene_DreamEssence.Value < Props.dreamessenceCost)
+                Gene_DreamEssence gene_DreamEssence = parent.pawn.genes?.GetFirstGeneOfType<Gene_DreamEssence>();
+                if (gene_DreamEssence == null || gene_DreamEssence.Value < Props.dreamEssenceCost)
                 {
                     return false;
                 }
@@ -23,7 +23,7 @@ namespace DreamEaters
         public override void Apply(LocalTargetInfo target, LocalTargetInfo dest)
         {
             base.Apply(target, dest);
-            GeneUtility.OffsetDreamEssence(parent.pawn, 0f - Props.dreamessenceCost);
+            DreamGeneUtility.OffsetDreamEsssence(parent.pawn, 0f - Props.dreamEssenceCost);
         }
 
         public override bool GizmoDisabled(out string reason)
@@ -34,14 +34,14 @@ namespace DreamEaters
                 reason = "AbilityDisabledNoDreamEssenceGene".Translate(parent.pawn);
                 return true;
             }
-            if (gene_DreamEssence.Value < Props.dreamessenceCost)
+            if (gene_DreamEssence.Value < Props.dreamEssenceCost)
             {
                 reason = "AbilityDisabledNoDreamEssence".Translate(parent.pawn);
                 return true;
             }
             float num = TotalDreamEssenceCostOfQueuedAbilities();
-            float num2 = Props.dreamessenceCost + num;
-            if (Props.dreamessenceCost > float.Epsilon && num2 > gene_DreamEssence.Value)
+            float num2 = Props.dreamEssenceCost + num;
+            if (Props.dreamEssenceCost > float.Epsilon && num2 > gene_DreamEssence.Value)
             {
                 reason = "AbilityDisabledNoDreamEssence".Translate(parent.pawn);
                 return true;
@@ -57,12 +57,12 @@ namespace DreamEaters
 
         private float TotalDreamEssenceCostOfQueuedAbilities()
         {
-            float num = ((!(parent.pawn.jobs?.curJob?.verbToUse is Verb_CastAbility verb_CastAbility)) ? 0f : (verb_CastAbility.ability?.DreamEssenceCost() ?? 0f));
+            float num = ((parent.pawn.jobs?.curJob?.verbToUse is not Verb_CastAbilityDream verb_CastAbility) ? 0f : (verb_CastAbility.ability?.DreamEssenceCost() ?? 0f));
             if (parent.pawn.jobs != null)
             {
                 for (int i = 0; i < parent.pawn.jobs.jobQueue.Count; i++)
                 {
-                    if (parent.pawn.jobs.jobQueue[i].job.verbToUse is Verb_CastAbility verb_CastAbility2)
+                    if (parent.pawn.jobs.jobQueue[i].job.verbToUse is Verb_CastAbilityDream verb_CastAbility2)
                     {
                         num += verb_CastAbility2.ability?.DreamEssenceCost() ?? 0f;
                     }

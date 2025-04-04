@@ -1,4 +1,4 @@
-﻿using System.Collection.Generic;
+﻿using System.Collections.Generic;
 using RimWorld;
 using UnityEngine;
 using Verse;
@@ -7,7 +7,7 @@ namespace DreamEaters
 {
     public class CompProperties_AbilityDreamEssenceCost : CompProperties_AbilityEffect
     {
-        public float dreamessenceCost;
+        public float dreamEssenceCost;
 
         public CompProperties_AbilityDreamEssenceCost()
         {
@@ -16,7 +16,7 @@ namespace DreamEaters
 
         public override IEnumerable<string> ExtraStatSummary()
         {
-            yield return (string)("AbilityDreamEssenceCost".Translate() + ": ") + Mathf.RoundToInt(dreamessenceCost * 100f);
+            yield return (string)("AbilityDreamEssenceCost".Translate() + ": ") + Mathf.RoundToInt(dreamEssenceCost * 100f);
         }
     }
 }

@@ -1,6 +1,6 @@
-﻿using System.Collection.Generic;
-using RimWorld;
+﻿using RimWorld;
 using Verse;
+using System.Collections.Generic;
 
 namespace DreamEaters
 {
@@ -10,6 +10,13 @@ namespace DreamEaters
 
         private const float MinAgeForDrain = 13f;
 
+        public bool CanOffset
+        {
+            get
+            {
+                return this.Active;
+            }
+        }
         public Gene_Resource Resource
         {
             get
