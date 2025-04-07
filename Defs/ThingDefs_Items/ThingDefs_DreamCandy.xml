@@ -3,7 +3,7 @@
 	<ThingDef>
 		<defName>HQC_DreamCandy</defName>
 		<label>dream candy</label>
-		<description>Dreams of humans materialized to be ingestible. Dream-Eaters have fashioned them into a sort of cotton candies because they thought it would look cute.</description>
+		<description>Dreams of humans materialized to be ingestible. Dream-Eaters have fashioned them into some sort of cotton candy because they thought it would look cute.</description>
 		<category>Item</category>
 		<thingClass>ThingWithComps</thingClass>
 		<drawerType>MapMeshOnly</drawerType>

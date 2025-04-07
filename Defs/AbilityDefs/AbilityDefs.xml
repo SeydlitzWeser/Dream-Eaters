@@ -24,5 +24,24 @@
             </targetParams>
         </verbProperties>
     </AbilityDef>
-    <!--Weave Dreams-->
+    <!--Dreamweave-->
+	<AbilityDef ParentName="AbilityTouchBase">
+		<defName>HQC_Dreamweave</defName>
+		<label>dreamweave</label>
+		<description>Extract the dreams of the sleeping target and weave them in dream candies.</description>
+		<iconPath>UI/Icons/Abilities/HQC_Dreamweave</iconPath>
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<verbProperties>
+			<verbClass>Verb_CastAbilityTouch</verbClass>
+			<drawAimPie>false</drawAimPie>
+			<range>-1</range>
+			<warmupTime>2</warmupTime>
+		</verbProperties>
+		<comps>
+			<li Class="DreamEaters.CompProperties_AbilityDreamweave">
+				<candyAmount>5</candyAmount>
+			</li>
+		</comps>
+	</AbilityDef>
 </Defs>

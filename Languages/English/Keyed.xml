@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+	<!--Messages-->
+	<MessageMustTargetSleepingPawn>You must target a sleeping pawn.</MessageMustTargetSleepingPawn>
+	<MessageTargetMustBeSleeping>The target must be sleeping.</MessageTargetMustBeSleeping>
+	<MessageCannotExtractFromHostilePawn>You can't target a pawn from a hostile faction.</MessageCannotExtractFromHostilePawn>
+	<!--Misc Gameplay-->
+	<AutoTakeDreamCandiesDesc>This determines whether {PAWN_nameDef} will automatically eat dream candies when {PAWN_possessive} dream essence is below {MIN}.\n\nAutomatic ingestion is currently {ONOFF}.</AutoTakeDreamCandiesDesc>
+	<ConsumeDreamCandiesBelow>Consume dream candies below</ConsumeDreamCandiesBelow>
+	<NeverConsumeDreamCandies>Never consume dream candies.</NeverConsumeDreamCandies>
+	<AbilityDreamEssenceCost>Dream essence cost</AbilityDreamEssenceCost>
+	<AbilityDreamEssenceGain>Base dream essence gain</AbilityDreamEssenceGain>
+	<DreamEssence>Dream essence</DreamEssence>
+	<DreamEssenceDesc>Dream essence is what gives energy to Dream-Eaters. Without this, they wouldn't be able to stay alive. If they run out, their bodies use their own life-force to compensate.</DreamEssenceDesc>
+</LanguageData>

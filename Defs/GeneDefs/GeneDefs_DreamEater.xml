@@ -4,14 +4,14 @@
 	<GeneDef>
 		<defName>HQC_Oneirogenic</defName>
 		<label>oneirogenic</label>
-		<description>Carriers of this gene have a reserve of biological strength powered by a resource called hemogen. The resource can be gained and spent in various ways, all of which are unlocked by other genes.\n\nCarriers lose 2 hemogen per day from biological entropy.</description>
+		<description>Carriers of this gene have are powered by the energy gained from consuming dreams of other people.</description>
 		<iconPath>UI/Icons/Genes/HQC_Oneirogenic</iconPath>
 		<displayCategory>HQC_Oneirogenic</displayCategory>
 		<displayOrderInCategory>666.1</displayOrderInCategory>
 		<selectionWeight>0</selectionWeight>
 		<geneClass>DreamEaters.Gene_DreamEssence</geneClass>
-		<resourceGizmoType>DreamEaters.GeneGizmo_ResourceDreamEssence</resourceGizmoType>
 		<resourceLabel>dream essence</resourceLabel>
+		<resourceGizmoType>DreamEaters.GeneGizmo_ResourceDreamEssence</resourceGizmoType>
 		<resourceGizmoThresholds>
 			<li>0.25</li>
 			<li>0.5</li>
@@ -44,5 +44,24 @@
 		<minAgeActive>13</minAgeActive>
 		<biostatCpx>3</biostatCpx>
 		<biostatMet>6</biostatMet>
+	</GeneDef>
+	<!--Dreamweaver-->
+	<GeneDef>
+		<defName>HQC_Dreamweaver</defName>
+		<label>dreamweaver</label>
+		<description>Carriers of this gene can extract dreams of sleeping people and weave them into dream candies, which resemble cotton candy.</description>
+		<iconPath>UI/Icons/Genes/HQC_Dreamweaver</iconPath>
+		<displayCategory>HQC_Oneirogenic</displayCategory>
+		<displayOrderInCategory>666.3</displayOrderInCategory>
+		<prerequisite>HQC_Oneirogenic</prerequisite>
+		<minAgeActive>13</minAgeActive>
+		<abilities>
+			<li>HQC_Dreamweave</li>
+		</abilities>
+		<descriptionHyperlinks>
+			<AbilityDef>HQC_Dreamweave</AbilityDef>
+		</descriptionHyperlinks>
+		<biostatCpx>2</biostatCpx>
+		<biostatMet>-1</biostatMet>
 	</GeneDef>
 </Defs>

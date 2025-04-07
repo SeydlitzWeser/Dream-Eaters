@@ -74,7 +74,7 @@ namespace DreamEaters
                 {
                     Widgets.DrawHighlight(rect);
                     string onOff = (dreamessenceGene.dreamCandiesAllowed ? "On" : "Off").Translate().ToString().UncapitalizeFirst();
-                    TooltipHandler.TipRegion(rect, () => "AutoTakeDreamEssenceDesc".Translate(gene.pawn.Named("PAWN"), dreamessenceGene.PostProcessValue(dreamessenceGene.targetValue).Named("MIN"), onOff.Named("ONOFF")).Resolve(), 828267373);
+                    TooltipHandler.TipRegion(rect, () => "AutoTakeDreamCandiesDesc".Translate(gene.pawn.Named("PAWN"), dreamessenceGene.PostProcessValue(dreamessenceGene.targetValue).Named("MIN"), onOff.Named("ONOFF")).Resolve(), 828267373);
                     mouseOverElement = true;
                 }
             }
@@ -87,7 +87,7 @@ namespace DreamEaters
             string text = $"{gene.ResourceLabel.CapitalizeFirst().Colorize(ColoredText.TipSectionTitleColor)}: {gene.ValueForDisplay} / {gene.MaxForDisplay}\n";
             if (gene.pawn.IsColonistPlayerControlled || gene.pawn.IsPrisonerOfColony)
             {
-                text = ((!(gene.targetValue <= 0f)) ? (text + (string)("ConsumeDreamEssenceBelow".Translate() + ": ") + gene.PostProcessValue(gene.targetValue)) : (text + "NeverConsumeDreamEssence".Translate().ToString()));
+                text = ((!(gene.targetValue <= 0f)) ? (text + (string)("ConsumeDreamCandiesBelow".Translate() + ": ") + gene.PostProcessValue(gene.targetValue)) : (text + "NeverConsumeDreamCandies".Translate().ToString()));
             }
             if (!drainGenes.NullOrEmpty())
             {
